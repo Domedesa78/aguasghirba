@@ -110,6 +110,11 @@ label.f{display:block;font-size:13px;font-weight:600;color:var(--muted);margin:1
 .av{flex:none;border-radius:50%;object-fit:cover;border:2px solid var(--c);background:#fff;display:inline-grid;place-items:center;line-height:1}
 .av.ini{background:var(--c);color:#fff;font-family:"Barlow Condensed";font-weight:800;border-color:rgba(0,0,0,.08)}
 .imgpick{display:flex;gap:14px;align-items:center;margin-top:2px}
+.tstrip{display:flex;gap:10px;overflow-x:auto;padding:4px 2px 10px;margin:0 -2px 6px;scroll-snap-type:x mandatory;scrollbar-width:thin}
+.tcard{flex:1 0 128px;scroll-snap-align:start;display:flex;flex-direction:column;align-items:center;gap:8px;padding:14px 8px 12px;background:#fff;border:1px solid var(--line);border-top:5px solid var(--c);border-radius:var(--r);box-shadow:var(--shadow);text-decoration:none;color:var(--ink);text-align:center}
+.tcard:hover{transform:translateY(-1px)}
+.tcard span:last-child{font-family:"Barlow Condensed";font-weight:700;font-size:17px;line-height:1.1}
+@media (max-width:560px){.tcard{flex-basis:112px}}
 .tchip .nm{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 
 /* ---------- MATCHES ---------- */
@@ -410,9 +415,13 @@ function matchRow(m){
     <div class="side b">${tchip(m.away,{win:m.status==="finita"&&b>a})}</div>
     <div class="chev">›</div></div>`;
 }
+function teamStrip(){
+  const ts=teamsArr();if(!ts.length)return "";
+  return `<div class="tstrip">${ts.map(t=>`<a class="tcard" href="#squadre" style="--c:${esc(t.color)}">${avatar(t,72)}<span>${esc(t.name)}</span></a>`).join("")}</div>`;
+}
 function vMatches(){
   const ms=matchesArr();
-  let h=`<div class="sec-h"><h2>Partite <small>${ms.filter(m=>m.status==="finita").length}/${ms.length} giocate</small></h2>
+  let h=teamStrip()+`<div class="sec-h"><h2>Partite <small>${ms.filter(m=>m.status==="finita").length}/${ms.length} giocate</small></h2>
     <div class="row"><button class="btn ghost small" data-act="newMatch">＋ Partita</button><button class="btn gold small" data-act="genCal">🎲 Genera calendario</button></div></div>`;
   if(!ms.length)return h+`<div class="card empty">Nessuna partita in calendario.<br><br><button class="btn gold" data-act="genCal">🎲 Genera il girone all'italiana</button></div>`;
   const live=ms.filter(m=>m.status==="in corso"),next=ms.find(m=>!m.status||m.status==="da giocare");
