@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AGUASGHIRBA · Torneo di Natale Altitudo Roma Hockey Sub</title>
+<meta name="theme-color" content="#7A1230">
+<link rel="icon" href="data:image/webp;base64,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">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script>
+/* =====================================================================
+   CONFIGURAZIONE FIREBASE
+   Lascia null per la modalità DEMO (i dati restano solo sul tuo browser).
+   Incolla qui l'oggetto firebaseConfig del tuo progetto Firebase per
+   condividere il torneo con tutti quelli che hanno il link.
+   ===================================================================== */
+const FIREBASE_CONFIG = {
+  apiKey: "AIzaSyBoMarsxj3V9KsnV8B28DL8gQTxOYlMInE",
+  authDomain: "aguasghirba.firebaseapp.com",
+  databaseURL: "https://aguasghirba-default-rtdb.europe-west1.firebasedatabase.app",
+  projectId: "aguasghirba",
+  storageBucket: "aguasghirba.firebasestorage.app",
+  messagingSenderId: "379317005639",
+  appId: "1:379317005639:web:405e6d8657224b3e2f7062"
+};
+</script>
+<style>
+:root{
+  --bord:#7A1230; --bord-2:#9B1B3F; --bord-d:#4A0A1D;
+  --gold:#F2B705; --gold-l:#FFD95A; --gold-d:#B98700;
+  --cream:#FBF5EA; --card:#FFFFFF; --ink:#2A1E22; --muted:#7A6A6E; --line:#EADFD0;
+  --pine:#1E5C43; --water:#1E4F8F; --ok:#1E7A4F; --live:#D7263D;
+  --r:14px; --shadow:0 1px 2px rgba(74,10,29,.06),0 6px 20px rgba(74,10,29,.07);
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{font-family:Barlow,system-ui,sans-serif;background:var(--cream);color:var(--ink);font-size:16px;line-height:1.4;-webkit-tap-highlight-color:transparent}
+h1,h2,h3,.cond{font-family:"Barlow Condensed",Barlow,sans-serif;letter-spacing:.01em}
+button,input,select,textarea{font:inherit;color:inherit}
+a{color:var(--bord-2)}
+
+/* ---------- HEADER ---------- */
+header.top{position:relative;overflow:hidden;color:#fff;
+  background:radial-gradient(120% 140% at 85% -20%,#B3264E 0%,var(--bord) 45%,var(--bord-d) 100%);
+  padding:18px 16px 26px}
+.snow{position:absolute;inset:0;pointer-events:none}
+.snow i{position:absolute;top:-12px;color:#fff;opacity:.75;font-style:normal;animation:fall linear infinite}
+@keyframes fall{to{transform:translateY(230px) translateX(20px) rotate(180deg)}}
+.bubbles i{position:absolute;bottom:-14px;border:1.5px solid rgba(255,255,255,.5);border-radius:50%;animation:rise ease-in infinite}
+@keyframes rise{to{transform:translateY(-240px) translateX(-10px);opacity:0}}
+.hwrap{position:relative;max-width:1000px;margin:0 auto;display:flex;gap:16px;align-items:center}
+.logo{background:#fff;border-radius:12px;padding:6px 8px;box-shadow:0 4px 14px rgba(0,0,0,.25);flex:none;line-height:0}
+.logo img{height:56px;width:auto}
+.htxt{min-width:0}
+.kicker{font-family:"Barlow Condensed";text-transform:uppercase;letter-spacing:.14em;font-size:13px;color:var(--gold-l);font-weight:600}
+h1.title{margin:0;font-size:clamp(34px,8vw,58px);font-weight:800;line-height:.95;color:#fff;text-shadow:0 2px 0 var(--bord-d)}
+h1.title span{color:var(--gold)}
+.hmeta{margin-top:8px;display:flex;flex-wrap:wrap;gap:6px 14px;font-size:14px;color:#F6E7EA}
+.hmeta b{color:#fff}
+.lights{position:absolute;left:0;right:0;bottom:0;height:14px;display:flex;justify-content:space-around;align-items:flex-start;pointer-events:none}
+.lights::before{content:"";position:absolute;left:0;right:0;top:2px;height:2px;background:rgba(0,0,0,.35);border-radius:50%}
+.lights b{width:8px;height:11px;border-radius:50% 50% 50% 50%/60% 60% 40% 40%;margin-top:3px;animation:blink 2.4s infinite}
+.lights b:nth-child(3n){background:var(--gold);box-shadow:0 0 8px var(--gold)}
+.lights b:nth-child(3n+1){background:#ff4d5e;box-shadow:0 0 8px #ff4d5e;animation-delay:.8s}
+.lights b:nth-child(3n+2){background:#5fd39a;box-shadow:0 0 8px #5fd39a;animation-delay:1.6s}
+@keyframes blink{50%{opacity:.35}}
+
+/* ---------- NAV ---------- */
+nav.tabs{position:sticky;top:0;z-index:20;background:var(--bord-d);box-shadow:0 2px 10px rgba(0,0,0,.2)}
+nav.tabs .in{max-width:1000px;margin:0 auto;display:flex;overflow-x:auto;scrollbar-width:none}
+nav.tabs .in::-webkit-scrollbar{display:none}
+nav.tabs a{flex:1 0 auto;text-align:center;padding:12px 14px 10px;color:#F0D9DE;text-decoration:none;font-family:"Barlow Condensed";font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:15px;border-bottom:3px solid transparent;white-space:nowrap}
+nav.tabs a.on{color:var(--gold);border-color:var(--gold)}
+
+main{max-width:1000px;margin:0 auto;padding:18px 14px 90px}
+.banner{border-radius:var(--r);padding:12px 14px;margin-bottom:14px;font-size:14px;display:flex;gap:10px;align-items:flex-start}
+.banner.demo{background:#FFF4CC;border:1px solid #F0D27A;color:#5A4500}
+.banner.err{background:#FDE6E9;border:1px solid #F2AEB8;color:#7A1230}
+.banner b{font-weight:700}
+
+/* ---------- COMMON ---------- */
+.sec-h{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:22px 0 10px;flex-wrap:wrap}
+.sec-h:first-child{margin-top:4px}
+.sec-h h2{margin:0;font-size:26px;font-weight:800;color:var(--bord);text-transform:uppercase}
+.sec-h h2 small{font-family:Barlow;font-size:14px;font-weight:500;color:var(--muted);text-transform:none;margin-left:6px}
+.card{background:var(--card);border-radius:var(--r);box-shadow:var(--shadow);border:1px solid var(--line)}
+.pad{padding:14px}
+.btn{border:0;border-radius:10px;padding:9px 14px;font-weight:700;cursor:pointer;background:var(--bord);color:#fff;display:inline-flex;align-items:center;gap:6px;min-height:40px}
+.btn:hover{background:var(--bord-2)}
+.btn.gold{background:var(--gold);color:var(--bord-d)}
+.btn.gold:hover{background:var(--gold-l)}
+.btn.ghost{background:transparent;color:var(--bord);border:1.5px solid var(--line)}
+.btn.ghost:hover{border-color:var(--bord);background:#fff}
+.btn.danger{background:#fff;color:#B3192F;border:1.5px solid #F2C2C9}
+.btn.small{padding:5px 10px;min-height:32px;font-size:14px}
+.btn:disabled{opacity:.5;cursor:default}
+.x{border:0;background:transparent;color:var(--muted);font-size:20px;line-height:1;cursor:pointer;padding:4px 8px;border-radius:8px}
+.x:hover{background:#F6E9EC;color:var(--bord)}
+input[type=text],input[type=time],input[type=date],input[type=number],select,textarea{width:100%;border:1.5px solid var(--line);background:#fff;border-radius:10px;padding:9px 11px;min-height:42px;outline:none}
+input:focus,select:focus,textarea:focus{border-color:var(--gold-d);box-shadow:0 0 0 3px rgba(242,183,5,.25)}
+label.f{display:block;font-size:13px;font-weight:600;color:var(--muted);margin:10px 0 4px}
+.row{display:flex;gap:10px;align-items:center}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.muted{color:var(--muted)}
+.empty{padding:26px 16px;text-align:center;color:var(--muted)}
+.dot{display:inline-block;width:12px;height:12px;border-radius:50%;flex:none;box-shadow:inset 0 0 0 1.5px rgba(0,0,0,.12)}
+.tchip{display:inline-flex;align-items:center;gap:7px;min-width:0}
+.av{flex:none;border-radius:50%;object-fit:cover;border:2px solid var(--c);background:#fff;display:inline-grid;place-items:center;line-height:1}
+.av.ini{background:var(--c);color:#fff;font-family:"Barlow Condensed";font-weight:800;border-color:rgba(0,0,0,.08)}
+.imgpick{display:flex;gap:14px;align-items:center;margin-top:2px}
+.tchip .nm{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+
+/* ---------- MATCHES ---------- */
+.phase{font-family:"Barlow Condensed";text-transform:uppercase;letter-spacing:.1em;font-weight:700;color:var(--gold-d);font-size:15px;margin:18px 2px 8px;display:flex;align-items:center;gap:8px}
+.phase::after{content:"";flex:1;height:1px;background:var(--line)}
+.mlist{display:grid;gap:10px}
+.match{display:grid;grid-template-columns:62px 1fr auto 1fr 26px;align-items:center;gap:10px;padding:12px 12px;cursor:pointer;transition:transform .08s}
+.match:hover{transform:translateY(-1px);border-color:#E2CFB6}
+.match .tm{font-family:"Barlow Condensed";font-weight:700;font-size:19px;color:var(--bord);line-height:1}
+.match .tm small{display:block;font-size:11px;font-weight:600;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;margin-top:3px}
+.match .side{display:flex;align-items:center;gap:8px;min-width:0;font-weight:600}
+.match .side.b{justify-content:flex-end;text-align:right}
+.match .side .nm{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.score{font-family:"Barlow Condensed";font-weight:800;font-size:26px;background:var(--cream);border-radius:10px;padding:2px 12px;min-width:76px;text-align:center;color:var(--ink);letter-spacing:.04em}
+.score.vs{font-size:16px;color:var(--muted);font-weight:700}
+.match.live{border-color:var(--live);box-shadow:0 0 0 2px rgba(215,38,61,.15),var(--shadow)}
+.match.live .score{background:var(--live);color:#fff}
+.match.done .score{background:var(--bord);color:#fff}
+.win{font-weight:800}
+.badge{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;padding:2px 7px;border-radius:20px}
+.badge.live{background:var(--live);color:#fff;animation:pulse 1.4s infinite}
+@keyframes pulse{50%{opacity:.6}}
+.chev{color:var(--muted);font-size:20px;text-align:right}
+.hero{margin-bottom:6px;overflow:hidden}
+.hero .hh{background:linear-gradient(90deg,var(--live),#E8505F);color:#fff;font-family:"Barlow Condensed";font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:6px 14px;font-size:14px}
+.hero.next .hh{background:linear-gradient(90deg,var(--pine),#2E7A5B)}
+.hero .match{box-shadow:none;border:0;border-radius:0}
+
+/* ---------- TABLES ---------- */
+.tbl{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.tbl th{font-family:"Barlow Condensed";text-transform:uppercase;letter-spacing:.06em;font-size:13px;color:var(--muted);font-weight:700;text-align:center;padding:10px 6px;border-bottom:2px solid var(--line)}
+.tbl td{padding:10px 6px;text-align:center;border-bottom:1px solid #F3EADF}
+.tbl tr:last-child td{border-bottom:0}
+.tbl td.l,.tbl th.l{text-align:left}
+.tbl td.pts{font-family:"Barlow Condensed";font-weight:800;font-size:20px;color:var(--bord)}
+.pos{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:50%;font-family:"Barlow Condensed";font-weight:800;background:var(--cream);color:var(--ink)}
+.pos.p1{background:var(--gold);color:var(--bord-d)}
+.pos.p2{background:#D9D9DE}
+.pos.p3{background:#E3B48A}
+.scroll-x{overflow-x:auto}
+@media (max-width:560px){.tbl .hide-s{display:none}}
+
+/* ---------- TEAMS ---------- */
+.teams{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:12px}
+.team .th{display:flex;align-items:center;gap:10px;padding:12px 12px 10px;border-bottom:1px solid var(--line);border-top:6px solid var(--c);border-radius:var(--r) var(--r) 0 0}
+.team .em{font-size:28px;line-height:1}
+.team h3{margin:0;font-size:21px;font-weight:800;line-height:1.05;flex:1;min-width:0}
+.team h3 small{display:block;font-family:Barlow;font-size:13px;font-weight:500;color:var(--muted)}
+.team ul{list-style:none;margin:0;padding:6px 6px 0}
+.team li{display:flex;align-items:center;justify-content:space-between;padding:5px 6px;border-radius:8px}
+.team li:hover{background:var(--cream)}
+.team .add{padding:8px 12px 12px}
+.plist{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:8px}
+.prow{display:grid;grid-template-columns:1fr 150px 34px;gap:8px;align-items:center;padding:8px 10px}
+.prow .pn{font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;cursor:pointer}
+.prow select{min-height:36px;padding:5px 8px;font-size:14px}
+
+/* ---------- SCORERS ---------- */
+.sc-row{display:grid;grid-template-columns:34px 1fr auto;gap:10px;align-items:center;padding:10px 12px;border-bottom:1px solid #F3EADF}
+.sc-row:last-child{border-bottom:0}
+.sc-row .g{font-family:"Barlow Condensed";font-weight:800;font-size:24px;color:var(--bord);display:flex;align-items:center;gap:8px}
+.bar{height:8px;border-radius:5px;background:var(--gold);margin-top:5px}
+
+
+/* ---------- MODAL ---------- */
+.ov{position:fixed;inset:0;background:rgba(42,10,22,.55);z-index:50;display:flex;align-items:flex-end;justify-content:center;padding:0}
+@media (min-width:700px){.ov{align-items:center;padding:20px}}
+.md{background:var(--cream);width:100%;max-width:640px;max-height:92vh;overflow:auto;border-radius:20px 20px 0 0;box-shadow:0 20px 60px rgba(0,0,0,.35)}
+@media (min-width:700px){.md{border-radius:20px}}
+.md .mh{position:sticky;top:0;z-index:2;display:flex;align-items:center;justify-content:space-between;padding:12px 14px;background:var(--bord);color:#fff}
+.md .mh h3{margin:0;font-size:22px;font-weight:800;text-transform:uppercase}
+.md .mh .x{color:#F6DDE3}
+.md .mb{padding:14px}
+.board{display:grid;grid-template-columns:1fr auto 1fr;gap:10px;align-items:start;text-align:center}
+.board .bt{font-family:"Barlow Condensed";font-weight:800;font-size:20px;line-height:1.05;display:flex;flex-direction:column;align-items:center;gap:4px}
+.board .bt .em{font-size:34px}
+.big{font-family:"Barlow Condensed";font-weight:800;font-size:64px;line-height:1;color:var(--bord);padding:0 6px;font-variant-numeric:tabular-nums}
+.gin{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+.gbox{background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px;border-top:5px solid var(--c)}
+.gbox .btn{width:100%;justify-content:center;margin-top:8px;font-size:18px;font-family:"Barlow Condensed";letter-spacing:.06em}
+.glist{margin-top:14px}
+.gl{display:grid;grid-template-columns:28px 1fr auto;align-items:center;gap:8px;padding:7px 8px;background:#fff;border:1px solid var(--line);border-radius:10px;margin-bottom:6px}
+.gl .n{font-family:"Barlow Condensed";font-weight:700;color:var(--muted);text-align:center}
+.seg{display:flex;background:#fff;border:1.5px solid var(--line);border-radius:12px;padding:3px;gap:3px}
+.seg button{flex:1;border:0;background:transparent;border-radius:9px;padding:8px 6px;font-weight:700;cursor:pointer;color:var(--muted)}
+.seg button.on{background:var(--bord);color:#fff}
+.seg button.on.live{background:var(--live)}
+details.more{margin-top:14px;background:#fff;border:1px solid var(--line);border-radius:12px}
+details.more summary{cursor:pointer;padding:12px 14px;font-weight:700;color:var(--bord)}
+details.more .in{padding:0 14px 14px}
+
+.toast{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);background:var(--ink);color:#fff;padding:10px 16px;border-radius:12px;z-index:90;font-weight:600;box-shadow:0 8px 24px rgba(0,0,0,.3);max-width:90vw}
+.loading{padding:40px;text-align:center;color:var(--muted)}
+footer{text-align:center;color:var(--muted);font-size:13px;padding:10px 14px 30px}
+@media (max-width:560px){
+  .hwrap{flex-direction:column;align-items:flex-start;gap:10px}
+  h1.title{font-size:clamp(34px,11vw,56px);word-break:break-word}
+  .match{grid-template-columns:50px 1fr auto;grid-template-rows:auto auto;gap:4px 10px;padding:10px 12px}
+  .match .tm{grid-row:1/3}
+  .match .side.a{grid-column:2;grid-row:1}
+  .match .side.b{grid-column:2;grid-row:2;justify-content:flex-start;text-align:left}
+  .match .score{grid-column:3;grid-row:1/3}
+  .match .chev{display:none}
+  .score{min-width:62px;font-size:22px;padding:4px 8px}
+  .match .tm{font-size:17px}
+  .logo img{height:42px}
+  .big{font-size:52px}
+  .prow{grid-template-columns:1fr 130px 30px}
+}
+@media (prefers-reduced-motion:reduce){.snow,.bubbles{display:none}.lights b,.badge.live{animation:none}}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="snow" id="snow"></div>
+  <div class="snow bubbles" id="bubbles"></div>
+  <div class="hwrap">
+    <div class="logo"><img src="data:image/webp;base64,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" alt="Altitudo Roma Hockey Sub"></div>
+    <div class="htxt">
+      <div class="kicker">🎄 Torneo di Natale · Hockey Subacqueo</div>
+      <h1 class="title" id="tName">AGUAS<span>GHIRBA</span></h1>
+      <div class="hmeta" id="hmeta"></div>
+    </div>
+  </div>
+  <div class="lights" id="lights"></div>
+</header>
+<nav class="tabs"><div class="in" id="tabs"></div></nav>
+<main id="app"><div class="loading">Carico il torneo… 🎅</div></main>
+<footer>Organizzato da Altitudo Roma Hockey Sub · Buon Natale e buona apnea! ❄️</footer>
+<div id="modal"></div>
+
+<script>
+"use strict";
+/* ================= UTIL ================= */
+const $=s=>document.querySelector(s);
+const esc=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const uid=()=>Date.now().toString(36)+Math.random().toString(36).slice(2,8);
+const byName=(a,b)=>String(a.name||"").localeCompare(String(b.name||""),"it",{sensitivity:"base"});
+let toastT;function toast(msg){let t=$("#toast");if(!t){t=document.createElement("div");t.id="toast";t.className="toast";document.body.appendChild(t)}t.textContent=msg;t.style.display="block";clearTimeout(toastT);toastT=setTimeout(()=>t.style.display="none",2600)}
+function safe(fn){return async(...a)=>{try{return await fn(...a)}catch(e){console.error(e);toast("Errore: "+(e&&e.message||e))}}}
+
+/* ================= DEFAULTS / SEED ================= */
+const DEFAULT_META={nome:"AGUASGHIRBA",data:"2026-12-12",luogo:"Piscina Arvalia Nuoto",indirizzo:"Via dei Rinucci 75, Roma",formula:"4 vs 4",ptsV:3,ptsN:1,inizio:"15:00",durata:20,seeded:true};
+const SEED_TEAMS={
+  t1:{name:"I Panettoni Abissali",color:"#E0A100",order:1},
+  t2:{name:"Le Renne Sommerse",color:"#B3262E",order:2},
+  t3:{name:"I Calamari Canditi",color:"#7B4FA3",order:3},
+  t4:{name:"Gli Zampognari in Apnea",color:"#1E7A4F",order:4},
+  t5:{name:"Le Stelle Marine Cometa",color:"#2F5AAE",order:5}
+};
+const SEED_PLAYERS=["Capitan Baccalà","Polpo Paul","Nonno Gelo","La Murena Gentile","Sciabola Pucci","Boccaglio d'Oro","Frank Pinna","Torrone Morbido",
+  "Il Cefalo Volante","Tappo Tappetti","Gamberetta Rossa","Bolla Bollini","Mister Mandarino","Apnea Joe","Spugna Bob Natale","Pandoro Pinnato",
+  "La Triglia","Zia Seppia","Gelone","Stecca Fredda"];
+
+/* ================= STORE ================= */
+const COLS=["meta","teams","players","matches","goals"];
+const S={meta:{},teams:{},players:{},matches:{},goals:{}};
+const Store={mode:"loading",fs:null,ready:new Set(),error:null};
+
+function seedOps(){
+  const ops=[{op:"set",col:"meta",id:"torneo",data:{...DEFAULT_META}}];
+  Object.entries(SEED_TEAMS).forEach(([id,t])=>ops.push({op:"set",col:"teams",id,data:t}));
+  SEED_PLAYERS.forEach((n,i)=>ops.push({op:"set",col:"players",id:"p"+(i+1),data:{name:n,team:"t"+((i%5)+1),demo:true}}));
+  return ops;
+}
+
+/* --- local (demo) --- */
+const LS_KEY="aguasghirba-demo-v1";
+function localLoad(){try{const r=localStorage.getItem(LS_KEY);if(r){const d=JSON.parse(r);COLS.forEach(c=>S[c]=d[c]||{});return true}}catch(e){}return false}
+function localSave(){try{localStorage.setItem(LS_KEY,JSON.stringify({...S}))}catch(e){toast("Memoria del browser piena: in demo le immagini delle squadre occupano spazio")}}
+
+async function storeInit(){
+  if(FIREBASE_CONFIG){
+    try{
+      await loadScript("https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js");
+      await loadScript("https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js");
+      firebase.initializeApp(FIREBASE_CONFIG);
+      Store.rt=firebase.database();
+      Store.mode="firebase";
+      const timer=setTimeout(()=>{if(Store.ready.size<COLS.length){Store.error="Non riesco a raggiungere il database. Controlla la connessione: i dati potrebbero non essere aggiornati.";render()}},10000);
+      COLS.forEach(col=>{
+        Store.rt.ref(col).on("value",snap=>{
+          S[col]=snap.val()||{};Store.ready.add(col);
+          if(Store.ready.size===COLS.length){clearTimeout(timer);if(Store.error&&Store.error.startsWith("Non riesco"))Store.error=null}
+          if(col==="meta"&&!S.meta.torneo&&!Store.seeded){Store.seeded=true;batch(seedOps())}
+          scheduleRender();
+        },err=>{console.error(err);clearTimeout(timer);Store.error=/permission/i.test(err.message)?"Il database non accetta richieste: controlla le Regole su Firebase (forse la data di scadenza è passata).":"Errore database: "+err.message;scheduleRender()});
+      });
+      let wasOn=false;
+      Store.rt.ref(".info/connected").on("value",s=>{const on=!!s.val();
+        if(on){wasOn=true;if(Store.error&&Store.error.startsWith("Connessione"))Store.error=null}
+        else if(wasOn)Store.error="Connessione persa: le modifiche verranno inviate appena torna la rete.";
+        scheduleRender()});
+      return;
+    }catch(e){console.error(e);Store.error="Firebase non disponibile ("+e.message+"). Uso la modalità demo.";}
+  }
+  Store.mode="local";
+  if(!localLoad()){seedOps().forEach(applyLocal);localSave()}
+  COLS.forEach(c=>Store.ready.add(c));
+  render();
+}
+function loadScript(src){return new Promise((res,rej)=>{const s=document.createElement("script");s.src=src;s.onload=res;s.onerror=()=>rej(new Error("script non caricato"));document.head.appendChild(s)})}
+function applyLocal(o){
+  S[o.col]=S[o.col]||{};
+  if(o.op==="set")S[o.col][o.id]=JSON.parse(JSON.stringify(o.data));
+  else if(o.op==="update")S[o.col][o.id]={...(S[o.col][o.id]||{}),...JSON.parse(JSON.stringify(o.data))};
+  else if(o.op==="delete")delete S[o.col][o.id];
+}
+async function batch(ops){
+  if(!ops.length)return;
+  if(Store.mode==="firebase"){
+    const u={};
+    ops.forEach(o=>{
+      if(o.op==="set")u[o.col+"/"+o.id]=o.data;
+      else if(o.op==="delete")u[o.col+"/"+o.id]=null;
+      else Object.entries(o.data).forEach(([k,v])=>u[o.col+"/"+o.id+"/"+k]=v);
+    });
+    await Store.rt.ref().update(u);
+  }else{ops.forEach(applyLocal);localSave();scheduleRender()}
+}
+const put=(col,id,data)=>batch([{op:"set",col,id,data}]);
+const upd=(col,id,data)=>batch([{op:"update",col,id,data}]);
+const del=(col,id)=>batch([{op:"delete",col,id}]);
+async function getDoc(col,id){
+  if(Store.mode==="firebase"){const d=await Store.rt.ref(col+"/"+id).get();return d.exists()?d.val():null}
+  return (S[col]||{})[id]||null;
+}
+
+/* ================= DERIVED ================= */
+const meta=()=>({...DEFAULT_META,...(S.meta.torneo||{})});
+const teamsArr=()=>Object.entries(S.teams).map(([id,t])=>({id,...t})).sort((a,b)=>(a.order??99)-(b.order??99)||byName(a,b));
+const playersArr=()=>Object.entries(S.players).map(([id,p])=>({id,...p})).sort(byName);
+const matchesArr=()=>Object.entries(S.matches).map(([id,m])=>({id,...m})).sort((a,b)=>(a.n??999)-(b.n??999)||String(a.time||"").localeCompare(String(b.time||"")));
+const goalsOf=mid=>Object.entries(S.goals).map(([id,g])=>({id,...g})).filter(g=>g.match===mid).sort((a,b)=>(a.t||0)-(b.t||0));
+function score(m){let a=0,b=0;for(const g of Object.values(S.goals)){if(g.match!==m.id)continue;if(g.team===m.home)a++;else if(g.team===m.away)b++}return[a,b]}
+const team=id=>S.teams[id]?{id,...S.teams[id]}:{id,name:"Squadra eliminata",color:"#999"};
+const isGroup=m=>!m.fase||/girone/i.test(m.fase);
+
+function standings(){
+  const M=meta(),rows={};
+  teamsArr().forEach(t=>rows[t.id]={t,G:0,V:0,N:0,P:0,GF:0,GS:0,Pt:0});
+  matchesArr().filter(m=>isGroup(m)&&m.status==="finita").forEach(m=>{
+    const[a,b]=score(m),A=rows[m.home],B=rows[m.away];if(!A||!B)return;
+    A.G++;B.G++;A.GF+=a;A.GS+=b;B.GF+=b;B.GS+=a;
+    if(a>b){A.V++;B.P++;A.Pt+=+M.ptsV}else if(b>a){B.V++;A.P++;B.Pt+=+M.ptsV}else{A.N++;B.N++;A.Pt+=+M.ptsN;B.Pt+=+M.ptsN}
+  });
+  return Object.values(rows).sort((x,y)=>y.Pt-x.Pt||(y.GF-y.GS)-(x.GF-x.GS)||y.GF-x.GF||byName(x.t,y.t));
+}
+function scorers(){
+  const c={};for(const g of Object.values(S.goals)){if(!g.player||!S.matches[g.match])continue;c[g.player]=(c[g.player]||0)+1}
+  return Object.entries(c).map(([pid,n])=>({p:S.players[pid]?{id:pid,...S.players[pid]}:{id:pid,name:"Giocatore eliminato"},n})).sort((a,b)=>b.n-a.n||byName(a.p,b.p));
+}
+
+/* ================= RENDER ================= */
+const VIEWS=[["partite","Partite"],["classifica","Classifica"],["squadre","Squadre"],["marcatori","Marcatori"],["gestione","Gestione"]];
+let view="partite",modalState=null,rq=false;
+function scheduleRender(){if(rq)return;rq=true;requestAnimationFrame(()=>{rq=false;render()})}
+function initials(name){const w=String(name||"?").replace(/^(i|il|lo|la|le|gli|l')\s+/i,"").split(/\s+/).filter(x=>x&&!/^(di|del|della|in|e|a)$/i.test(x));return (w.slice(0,2).map(x=>x[0]).join("")||"?").toUpperCase()}
+function avatar(t,size){
+  const st=`width:${size}px;height:${size}px;--c:${esc(t.color||"#999")}`;
+  return t.img?`<img class="av" src="${esc(t.img)}" alt="" style="${st}">`:`<span class="av ini" style="${st};font-size:${Math.round(size*.42)}px">${esc(initials(t.name))}</span>`;
+}
+function tchip(id,opts={}){const t=team(id);return `<span class="tchip">${avatar(t,24)}<span class="nm${opts.win?" win":""}">${esc(t.name)}</span></span>`}
+
+const fkey=el=>el.dataset.keep||el.id;
+function keepState(root){const st={},op=[];root.querySelectorAll("input,select,textarea").forEach(el=>{const k=fkey(el);if(k&&el.type!=="file")st[k]=el.value});root.querySelectorAll("details").forEach((d,i)=>op[i]=d.open);const a=document.activeElement;return{st,op,focus:a&&root.contains(a)&&a.matches("input,select,textarea")?fkey(a):null}}
+function restoreState(root,k){
+  root.querySelectorAll("input,select,textarea").forEach(el=>{const key=fkey(el);if(!key||el.type==="file"||!(key in k.st))return;if(el.tagName==="SELECT"&&![...el.options].some(o=>o.value===k.st[key]))return;el.value=k.st[key]});
+  const ds=root.querySelectorAll("details");(k.op||[]).forEach((o,i)=>{if(o&&ds[i])ds[i].open=true});
+  if(k.focus){const f=[...root.querySelectorAll("input,select,textarea")].find(el=>fkey(el)===k.focus);f&&f.focus()}}
+
+function render(){
+  const M=meta();
+  $("#tName").innerHTML=esc(M.nome).replace(/^(AGUAS)(GHIRBA)$/i,"$1<span>$2</span>");
+  const d=new Date(M.data+"T12:00:00");
+  const ds=isNaN(d)?esc(M.data):d.toLocaleDateString("it-IT",{weekday:"long",day:"numeric",month:"long",year:"numeric"});
+  const days=Math.ceil((d-new Date())/864e5);
+  $("#hmeta").innerHTML=`<span>📅 <b>${esc(ds)}</b></span><span>📍 <b>${esc(M.luogo)}</b></span><span>🤿 <b>${esc(M.formula)}</b></span>${days>0?`<span>⏳ mancano <b>${days}</b> giorni</span>`:days===0?`<span>🔥 <b>È oggi!</b></span>`:""}`;
+  $("#tabs").innerHTML=VIEWS.map(([k,l])=>`<a href="#${k}" class="${view===k?"on":""}">${l}</a>`).join("");
+  const app=$("#app"),k=keepState(app);
+  let h="";
+  if(Store.mode==="local")h+=`<div class="banner demo">🧪<div><b>Modalità demo.</b> I dati restano solo su questo browser. Per condividere il torneo con tutti serve collegare Firebase (vedi Gestione).</div></div>`;
+  if(Store.error)h+=`<div class="banner err">⚠️<div>${esc(Store.error)}</div></div>`;
+  if(Store.ready.size<COLS.length&&Store.mode!=="local")h+=`<div class="loading">Carico il torneo… 🎅</div>`;
+  else h+=({partite:vMatches,classifica:vTable,squadre:vTeams,marcatori:vScorers,gestione:vAdmin}[view])();
+  app.innerHTML=h;restoreState(app,k);
+  renderModal();
+}
+
+/* ---- PARTITE ---- */
+function matchRow(m){
+  const[a,b]=score(m),played=m.status!=="da giocare"&&m.status;
+  const cls=m.status==="in corso"?"live":m.status==="finita"?"done":"";
+  return `<div class="card match ${cls}" data-act="openMatch" data-id="${esc(m.id)}">
+    <div class="tm">${esc(m.time||"--:--")}<small>${m.status==="in corso"?'<span class="badge live">Live</span>':m.status==="finita"?"Finita":"#"+esc(m.n??"")}</small></div>
+    <div class="side a">${tchip(m.home,{win:m.status==="finita"&&a>b})}</div>
+    <div class="score ${played?"":"vs"}">${played?`${a} – ${b}`:"VS"}</div>
+    <div class="side b">${tchip(m.away,{win:m.status==="finita"&&b>a})}</div>
+    <div class="chev">›</div></div>`;
+}
+function vMatches(){
+  const ms=matchesArr();
+  let h=`<div class="sec-h"><h2>Partite <small>${ms.filter(m=>m.status==="finita").length}/${ms.length} giocate</small></h2>
+    <div class="row"><button class="btn ghost small" data-act="newMatch">＋ Partita</button><button class="btn gold small" data-act="genCal">🎲 Genera calendario</button></div></div>`;
+  if(!ms.length)return h+`<div class="card empty">Nessuna partita in calendario.<br><br><button class="btn gold" data-act="genCal">🎲 Genera il girone all'italiana</button></div>`;
+  const live=ms.filter(m=>m.status==="in corso"),next=ms.find(m=>!m.status||m.status==="da giocare");
+  live.forEach(m=>h+=`<div class="card hero"><div class="hh">● In acqua adesso</div>${matchRow(m)}</div>`);
+  if(!live.length&&next)h+=`<div class="card hero next"><div class="hh">Prossima partita</div>${matchRow(next)}</div>`;
+  const groups={};ms.forEach(m=>{const f=m.fase||"Girone";(groups[f]=groups[f]||[]).push(m)});
+  Object.entries(groups).forEach(([f,arr])=>{h+=`<div class="phase">${esc(f)}</div><div class="mlist">${arr.map(matchRow).join("")}</div>`});
+  const groupDone=ms.filter(isGroup).length&&ms.filter(isGroup).every(m=>m.status==="finita");
+  if(!ms.some(m=>!isGroup(m)))h+=`<div style="margin-top:16px;text-align:center"><button class="btn ghost" data-act="genFinals">🏆 Genera finali dalla classifica${groupDone?"":" (girone non ancora finito)"}</button></div>`;
+  return h;
+}
+
+/* ---- CLASSIFICA ---- */
+function vTable(){
+  const st=standings(),M=meta();
+  if(!st.length)return `<div class="card empty">Nessuna squadra.</div>`;
+  let h=`<div class="sec-h"><h2>Classifica <small>girone · vittoria ${M.ptsV} pt, pareggio ${M.ptsN} pt</small></h2></div>
+  <div class="card scroll-x"><table class="tbl"><thead><tr><th>#</th><th class="l">Squadra</th><th>Pt</th><th>G</th><th class="hide-s">V</th><th class="hide-s">N</th><th class="hide-s">P</th><th>GF</th><th>GS</th><th>DR</th></tr></thead><tbody>`;
+  st.forEach((r,i)=>{const dr=r.GF-r.GS;h+=`<tr><td><span class="pos p${i+1}">${i+1}</span></td><td class="l">${tchip(r.t.id)}</td><td class="pts">${r.Pt}</td><td>${r.G}</td><td class="hide-s">${r.V}</td><td class="hide-s">${r.N}</td><td class="hide-s">${r.P}</td><td>${r.GF}</td><td>${r.GS}</td><td>${dr>0?"+":""}${dr}</td></tr>`});
+  h+=`</tbody></table></div><p class="muted" style="font-size:13px;margin:8px 4px">Contano solo le partite del girone segnate come “Finita”. A parità di punti: differenza reti, poi gol fatti.</p>`;
+  const fin=matchesArr().filter(m=>!isGroup(m));
+  if(fin.length){h+=`<div class="sec-h"><h2>Fase finale</h2></div><div class="mlist">${fin.map(matchRow).join("")}</div>`}
+  return h;
+}
+
+/* ---- SQUADRE ---- */
+function vTeams(){
+  const ts=teamsArr(),ps=playersArr(),free=ps.filter(p=>!p.team||!S.teams[p.team]);
+  const opts=(sel)=>`<option value="">— Nessuna squadra —</option>`+ts.map(t=>`<option value="${esc(t.id)}"${sel===t.id?" selected":""}>${esc(t.name)}</option>`).join("");
+  let h=`<div class="sec-h"><h2>Squadre <small>${ts.length} squadre · ${ps.length} giocatori</small></h2><button class="btn ghost small" data-act="editTeam">＋ Squadra</button></div><div class="teams">`;
+  ts.forEach(t=>{
+    const roster=ps.filter(p=>p.team===t.id);
+    h+=`<div class="card team" style="--c:${esc(t.color)}"><div class="th">${avatar(t,48)}<h3>${esc(t.name)}<small>${roster.length} giocatori</small></h3><button class="x" title="Modifica squadra" data-act="editTeam" data-id="${esc(t.id)}">✎</button></div>
+      <ul>${roster.map(p=>`<li><span>${esc(p.name)}</span><button class="x" title="Togli dalla squadra" data-act="unassign" data-id="${esc(p.id)}">×</button></li>`).join("")||`<li class="muted">Ancora nessuno</li>`}</ul>
+      <div class="add"><select data-act="assignTo" data-team="${esc(t.id)}" data-keep="as-${esc(t.id)}"><option value="">＋ Aggiungi giocatore…</option>${free.map(p=>`<option value="${esc(p.id)}">${esc(p.name)}</option>`).join("")}</select></div></div>`;
+  });
+  h+=`</div>`;
+  h+=`<div class="sec-h"><h2>Giocatori <small>${free.length} senza squadra</small></h2><div class="row"><button class="btn ghost small" data-act="shuffle">🎲 Distribuisci a caso i liberi</button></div></div>
+  <div class="card pad"><label class="f" style="margin-top:0">Aggiungi giocatori (uno per riga)</label>
+  <textarea id="bulk" data-keep="bulk" rows="4" placeholder="Mario Rossi&#10;Giulia Bianchi&#10;…"></textarea>
+  <div class="grid2" style="margin-top:8px"><select id="bulkTeam" data-keep="bulkTeam">${opts("")}</select><button class="btn" data-act="bulkAdd">Aggiungi alla lista</button></div></div>`;
+  if(ps.length){h+=`<div class="plist" style="margin-top:10px">${ps.map(p=>`<div class="card prow"><span class="pn" data-act="renamePlayer" data-id="${esc(p.id)}" title="Tocca per rinominare">${esc(p.name)}</span><select data-act="setTeam" data-id="${esc(p.id)}">${opts(S.teams[p.team]?p.team:"")}</select><button class="x" title="Elimina giocatore" data-act="delPlayer" data-id="${esc(p.id)}">🗑</button></div>`).join("")}</div>`}
+  return h;
+}
+
+/* ---- MARCATORI ---- */
+function vScorers(){
+  const sc=scorers(),tot=Object.values(S.goals).filter(g=>S.matches[g.match]).length;
+  let h=`<div class="sec-h"><h2>Marcatori <small>${tot} gol totali</small></h2></div>`;
+  if(!sc.length)return h+`<div class="card empty">Ancora nessun gol. Apri una partita e segna i marcatori dal menù a tendina. 🥅</div>`;
+  const max=sc[0].n;
+  h+=`<div class="card">${sc.map((r,i)=>`<div class="sc-row"><span class="pos ${i<3?"p"+(i+1):""}">${i+1}</span><div style="min-width:0"><div style="font-weight:700">${esc(r.p.name)}</div><div class="muted" style="font-size:13px">${r.p.team&&S.teams[r.p.team]?tchip(r.p.team):"senza squadra"}</div><div class="bar" style="width:${Math.max(6,r.n/max*100)}%"></div></div><div class="g">${r.n}<span style="font-size:16px">⚽</span></div></div>`).join("")}</div>`;
+  const byTeam=teamsArr().map(t=>({t,n:Object.values(S.goals).filter(g=>g.team===t.id&&S.matches[g.match]).length})).sort((a,b)=>b.n-a.n);
+  h+=`<div class="sec-h"><h2>Gol per squadra</h2></div><div class="card">${byTeam.map(r=>`<div class="sc-row" style="grid-template-columns:1fr auto">${tchip(r.t.id)}<div class="g">${r.n}</div></div>`).join("")}</div>`;
+  return h;
+}
+
+/* ---- GESTIONE ---- */
+function vAdmin(){
+  const M=meta();
+  return `<div class="sec-h"><h2>Gestione torneo</h2></div>
+  <div class="card pad">
+    <div class="grid2"><div><label class="f">Nome torneo</label><input type="text" id="mNome" value="${esc(M.nome)}"></div><div><label class="f">Data</label><input type="date" id="mData" value="${esc(M.data)}"></div></div>
+    <div class="grid2"><div><label class="f">Luogo</label><input type="text" id="mLuogo" value="${esc(M.luogo)}"></div><div><label class="f">Formula</label><input type="text" id="mFormula" value="${esc(M.formula)}"></div></div>
+    <div class="grid2"><div><label class="f">Punti vittoria</label><input type="number" min="0" id="mV" value="${esc(M.ptsV)}"></div><div><label class="f">Punti pareggio</label><input type="number" min="0" id="mN" value="${esc(M.ptsN)}"></div></div>
+    <div class="grid2"><div><label class="f">Ora prima partita</label><input type="time" id="mIn" value="${esc(M.inizio)}"></div><div><label class="f">Minuti per partita (cambio incluso)</label><input type="number" min="5" id="mDur" value="${esc(M.durata)}"></div></div>
+    <div style="margin-top:12px"><button class="btn" data-act="saveMeta">Salva impostazioni</button></div>
+  </div>
+  <div class="sec-h"><h2>Pulizie</h2></div>
+  <div class="card pad" style="display:flex;flex-wrap:wrap;gap:8px">
+    <button class="btn danger" data-act="wipe" data-what="goals">Azzera tutti i gol</button>
+    <button class="btn danger" data-act="wipe" data-what="matches">Cancella calendario</button>
+    <button class="btn danger" data-act="wipe" data-what="demo">Elimina giocatori di esempio</button>
+    <button class="btn danger" data-act="wipe" data-what="players">Elimina tutti i giocatori</button>
+  </div>
+  <div class="sec-h"><h2>Condivisione</h2></div>
+  <div class="card pad" style="font-size:15px">
+    ${Store.mode==="firebase"?`✅ <b>Collegato al database condiviso.</b> Chiunque abbia il link vede e modifica il torneo in tempo reale.`:
+    `🧪 <b>Modalità demo</b>: i dati sono salvati solo in questo browser.<br><br>Per condividere il torneo: crea un progetto gratuito su <a href="https://console.firebase.google.com/" target="_blank" rel="noopener">Firebase</a>, attiva <b>Realtime Database</b>, registra una “app web” e incolla il suo <code>firebaseConfig</code> in cima al file (riga <code>const FIREBASE_CONFIG</code>). Poi pubblica il file su un hosting gratuito.`}
+  </div>`;
+}
+
+/* ================= MODALS ================= */
+function openModal(kind,arg){modalState={kind,arg};renderModal(true)}
+function closeModal(){modalState=null;$("#modal").innerHTML="";document.body.style.overflow=""}
+function renderModal(fresh){
+  const root=$("#modal");if(!modalState){root.innerHTML="";return}
+  const k=fresh?{st:{},op:[]}:keepState(root);
+  const f={match:mMatch,team:mTeam,confirm:mConfirm,newMatch:mNewMatch,rename:mRename}[modalState.kind];
+  const inner=f(modalState.arg);
+  if(inner===null){closeModal();return}
+  const scrollTop=root.querySelector(".md")?.scrollTop||0;
+  root.innerHTML=`<div class="ov" data-act="ovClose"><div class="md" role="dialog">${inner}</div></div>`;
+  root.querySelector(".md").scrollTop=scrollTop;
+  restoreState(root,k);document.body.style.overflow="hidden";
+}
+const mh=t=>`<div class="mh"><h3>${t}</h3><button class="x" data-act="close" aria-label="Chiudi">✕</button></div>`;
+
+function mMatch(id){
+  const m=S.matches[id]?{id,...S.matches[id]}:null;if(!m)return null;
+  const[a,b]=score(m),A=team(m.home),B=team(m.away),gl=goalsOf(id);
+  const roster=tid=>playersArr().filter(p=>p.team===tid);
+  const sel=(tid,key)=>`<select data-keep="${key}" id="${key}"><option value="">Marcatore…</option>${roster(tid).map(p=>`<option value="${esc(p.id)}">${esc(p.name)}</option>`).join("")}<option value="__none">Senza nome / autogol</option></select>`;
+  const st=m.status||"da giocare";
+  return mh(`${esc(m.fase||"Girone")} · ${esc(m.time||"")}`)+`<div class="mb">
+    <div class="board"><div class="bt">${avatar(A,64)}${esc(A.name)}</div><div class="big">${a}<span style="color:var(--gold-d)">–</span>${b}</div><div class="bt">${avatar(B,64)}${esc(B.name)}</div></div>
+    <div class="seg" style="margin-top:14px">${["da giocare","in corso","finita"].map(s=>`<button class="${st===s?"on"+(s==="in corso"?" live":""):""}" data-act="setStatus" data-id="${esc(id)}" data-s="${s}">${s==="da giocare"?"Da giocare":s==="in corso"?"● In corso":"Finita"}</button>`).join("")}</div>
+    <div class="gin">
+      <div class="gbox" style="--c:${esc(A.color)}">${sel(m.home,"gA")}<button class="btn" data-act="goal" data-id="${esc(id)}" data-side="A">⚽ GOL</button></div>
+      <div class="gbox" style="--c:${esc(B.color)}">${sel(m.away,"gB")}<button class="btn" data-act="goal" data-id="${esc(id)}" data-side="B">⚽ GOL</button></div>
+    </div>
+    <div class="glist">${gl.length?gl.map((g,i)=>{const p=g.player&&S.players[g.player];return `<div class="gl"><span class="n">${i+1}</span><span>${tchip(g.team)} · <b>${p?esc(p.name):g.player?"Giocatore eliminato":"senza nome"}</b></span><button class="x" data-act="delGoal" data-id="${esc(g.id)}" title="Annulla gol">×</button></div>`}).join(""):`<p class="muted" style="text-align:center">Ancora 0 a 0. Scegli il marcatore e premi GOL.</p>`}</div>
+    <details class="more"><summary>Modifica partita</summary><div class="in">
+      <div class="grid2"><div><label class="f">Fase</label><input type="text" id="eFase" list="fasi" value="${esc(m.fase||"Girone")}"></div><div><label class="f">Orario</label><input type="time" id="eTime" value="${esc(m.time||"")}"></div></div>
+      <datalist id="fasi"><option>Girone</option><option>Semifinale</option><option>Finale 3°-4° posto</option><option>Finale</option></datalist>
+      <div class="grid2"><div><label class="f">Squadra A</label><select id="eHome">${teamsArr().map(t=>`<option value="${esc(t.id)}"${t.id===m.home?" selected":""}>${esc(t.name)}</option>`).join("")}</select></div><div><label class="f">Squadra B</label><select id="eAway">${teamsArr().map(t=>`<option value="${esc(t.id)}"${t.id===m.away?" selected":""}>${esc(t.name)}</option>`).join("")}</select></div></div>
+      <div class="row" style="margin-top:12px;justify-content:space-between"><button class="btn" data-act="saveMatch" data-id="${esc(id)}">Salva</button><button class="btn danger" data-act="delMatch" data-id="${esc(id)}">Elimina partita</button></div>
+    </div></details></div>`;
+}
+function mNewMatch(){
+  const ts=teamsArr(),o=ts.map(t=>`<option value="${esc(t.id)}">${esc(t.name)}</option>`).join("");
+  return mh("Nuova partita")+`<div class="mb">
+    <div class="grid2"><div><label class="f">Squadra A</label><select id="nHome" data-keep="nHome">${o}</select></div><div><label class="f">Squadra B</label><select id="nAway" data-keep="nAway">${ts.map((t,i)=>`<option value="${esc(t.id)}"${i===1?" selected":""}>${esc(t.name)}</option>`).join("")}</select></div></div>
+    <div class="grid2"><div><label class="f">Fase</label><input type="text" id="nFase" list="fasi2" value="Girone"><datalist id="fasi2"><option>Girone</option><option>Semifinale</option><option>Finale 3°-4° posto</option><option>Finale</option></datalist></div><div><label class="f">Orario</label><input type="time" id="nTime" value="${esc(nextTime())}"></div></div>
+    <div style="margin-top:14px"><button class="btn gold" data-act="createMatch">Crea partita</button></div></div>`;
+}
+function mTeam(id){
+  const t=id?S.teams[id]:{name:"",color:"#C0392B"};if(id&&!t)return null;
+  const pend=modalState.img,img=pend!==undefined?pend:(t.img||"");
+  const prev={...t,img,name:t.name||"Nuova squadra"};
+  return mh(id?"Modifica squadra":"Nuova squadra")+`<div class="mb">
+    <label class="f">Nome</label><input type="text" id="tN" value="${esc(t.name)}" placeholder="Es. Le Cozze Bionde">
+    <label class="f">Immagine della squadra</label>
+    <div class="imgpick">${avatar(prev,88)}<div style="display:flex;flex-direction:column;gap:8px;align-items:flex-start">
+      <label class="btn ghost small" style="cursor:pointer">📷 ${img?"Cambia immagine":"Carica immagine"}<input type="file" accept="image/*" id="teamImg" style="display:none"></label>
+      ${img?`<button class="btn danger small" data-act="clearTeamImg">Rimuovi immagine</button>`:`<span class="muted" style="font-size:13px">Meglio quadrata. Senza immagine si vedono le iniziali.</span>`}
+    </div></div>
+    <label class="f">Colore della squadra</label><input type="color" id="tC" value="${esc(t.color||"#C0392B")}" style="width:100%;height:42px;border:1.5px solid var(--line);border-radius:10px;background:#fff;padding:3px">
+    <div class="row" style="margin-top:14px;justify-content:space-between"><button class="btn" data-act="saveTeam" data-id="${esc(id||"")}">Salva</button>${id?`<button class="btn danger" data-act="delTeam" data-id="${esc(id)}">Elimina squadra</button>`:""}</div></div>`;
+}
+function mRename(id){
+  const p=S.players[id];if(!p)return null;
+  return mh("Rinomina giocatore")+`<div class="mb"><label class="f">Nome</label><input type="text" id="rN" value="${esc(p.name)}"><div style="margin-top:14px"><button class="btn" data-act="saveRename" data-id="${esc(id)}">Salva</button></div></div>`;
+}
+function mConfirm(c){return mh(esc(c.title))+`<div class="mb"><p>${c.html}</p><div class="row" style="justify-content:flex-end;margin-top:14px"><button class="btn ghost" data-act="close">Annulla</button><button class="btn ${c.danger?"danger":"gold"}" data-act="confirmYes">${esc(c.yes||"Conferma")}</button></div></div>`}
+function confirmBox(title,html,yes,fn,danger=true){openModal("confirm",{title,html,yes,fn,danger})}
+
+/* ================= ACTIONS ================= */
+function nextTime(){const M=meta(),ms=matchesArr();const last=ms.map(m=>m.time).filter(Boolean).sort().pop();return last?addMin(last,+M.durata||20):M.inizio}
+function addMin(hhmm,min){const[h,m]=String(hhmm||"15:00").split(":").map(Number);const t=(h*60+m+min)%(24*60);return String(Math.floor(t/60)).padStart(2,"0")+":"+String(t%60).padStart(2,"0")}
+function roundRobin(ids){
+  const a=[...ids];if(a.length%2)a.push(null);const n=a.length,rounds=[];
+  for(let r=0;r<n-1;r++){const pr=[];for(let i=0;i<n/2;i++){const x=a[i],y=a[n-1-i];if(x&&y)pr.push(r%2?[y,x]:[x,y])}rounds.push(pr);a.splice(1,0,a.pop())}
+  return rounds;
+}
+const A={
+  close:()=>closeModal(),
+  ovClose:(el,ev)=>{if(ev.target===el)closeModal()},
+  confirmYes:async()=>{const c=modalState&&modalState.arg;closeModal();if(c&&c.fn)await c.fn()},
+  openMatch:el=>openModal("match",el.dataset.id),
+  newMatch:()=>{if(teamsArr().length<2)return toast("Servono almeno 2 squadre");openModal("newMatch")},
+  createMatch:async()=>{const h=$("#nHome").value,a=$("#nAway").value;if(h===a)return toast("Scegli due squadre diverse");
+    const ms=matchesArr(),n=(ms.length?Math.max(...ms.map(m=>+m.n||0)):0)+1;
+    await put("matches",uid(),{home:h,away:a,fase:$("#nFase").value.trim()||"Girone",time:$("#nTime").value,status:"da giocare",n});closeModal();toast("Partita creata")},
+  genCal:()=>{
+    const ts=teamsArr();if(ts.length<2)return toast("Servono almeno 2 squadre");
+    const old=matchesArr().filter(isGroup);
+    const go=async()=>{
+      const M=meta(),ops=[];
+      old.forEach(m=>{ops.push({op:"delete",col:"matches",id:m.id});goalsOf(m.id).forEach(g=>ops.push({op:"delete",col:"goals",id:g.id}))});
+      let i=0;roundRobin(ts.map(t=>t.id)).forEach(r=>r.forEach(([h,a])=>{ops.push({op:"set",col:"matches",id:uid()+i,data:{home:h,away:a,fase:"Girone",time:addMin(M.inizio,i*(+M.durata||20)),status:"da giocare",n:i+1}});i++}));
+      await batch(ops);toast(`Calendario creato: ${i} partite`);
+    };
+    const n=ts.length*(ts.length-1)/2;
+    confirmBox("Genera calendario",`Creo un girone all'italiana con <b>${ts.length} squadre</b> (${n} partite), dalle <b>${esc(meta().inizio)}</b>, una ogni <b>${esc(meta().durata)} minuti</b>.${old.length?`<br><br>⚠️ Le ${old.length} partite del girone già presenti (e i loro gol) verranno sostituite.`:""}<br><br><span class="muted">Orario e durata si cambiano in Gestione.</span>`,"Genera",go,!!old.length);
+  },
+  genFinals:()=>{
+    const st=standings();if(st.length<2)return toast("Servono almeno 2 squadre");
+    const t=nextTime(),M=meta(),ms=matchesArr(),n0=(ms.length?Math.max(...ms.map(m=>+m.n||0)):0);
+    const ops=[];
+    if(st.length>=4)ops.push({op:"set",col:"matches",id:uid()+"f3",data:{home:st[2].t.id,away:st[3].t.id,fase:"Finale 3°-4° posto",time:t,status:"da giocare",n:n0+1}});
+    ops.push({op:"set",col:"matches",id:uid()+"f1",data:{home:st[0].t.id,away:st[1].t.id,fase:"Finale",time:st.length>=4?addMin(t,+M.durata||20):t,status:"da giocare",n:n0+2}});
+    confirmBox("Genera finali",`In base alla classifica attuale:<br>${st.length>=4?`🥉 <b>${esc(st[2].t.name)}</b> vs <b>${esc(st[3].t.name)}</b><br>`:""}🏆 <b>${esc(st[0].t.name)}</b> vs <b>${esc(st[1].t.name)}</b><br><br><span class="muted">Potrai sempre modificare le squadre aprendo la partita.</span>`,"Crea finali",async()=>{await batch(ops);toast("Finali create")},false);
+  },
+  setStatus:async el=>{await upd("matches",el.dataset.id,{status:el.dataset.s})},
+  goal:async el=>{
+    const m=S.matches[el.dataset.id];if(!m)return;const side=el.dataset.side,sel=$(side==="A"?"#gA":"#gB");
+    if(!sel.value){sel.focus();return toast("Scegli prima il marcatore dal menù")}
+    const pv=sel.value;sel.value="";
+    const ops=[{op:"set",col:"goals",id:uid(),data:{match:el.dataset.id,team:side==="A"?m.home:m.away,player:pv==="__none"?"":pv,t:Date.now()}}];
+    if(!m.status||m.status==="da giocare")ops.push({op:"update",col:"matches",id:el.dataset.id,data:{status:"in corso"}});
+    await batch(ops);toast("⚽ Gol!");
+  },
+  delGoal:async el=>{await del("goals",el.dataset.id);toast("Gol annullato")},
+  saveMatch:async el=>{const h=$("#eHome").value,a=$("#eAway").value;if(h===a)return toast("Scegli due squadre diverse");
+    await upd("matches",el.dataset.id,{home:h,away:a,fase:$("#eFase").value.trim()||"Girone",time:$("#eTime").value});toast("Partita salvata")},
+  delMatch:el=>{const id=el.dataset.id;confirmBox("Elimina partita","Elimino la partita e tutti i suoi gol?","Elimina",async()=>{await batch([{op:"delete",col:"matches",id},...goalsOf(id).map(g=>({op:"delete",col:"goals",id:g.id}))]);toast("Partita eliminata")})},
+  editTeam:el=>openModal("team",el.dataset.id||""),
+  clearTeamImg:()=>{modalState.img="";renderModal()},
+  saveTeam:async el=>{const name=$("#tN").value.trim();if(!name)return toast("Dai un nome alla squadra");
+    const id=el.dataset.id,data={name,color:$("#tC").value};
+    if(modalState.img!==undefined)data.img=modalState.img;
+    if(id)await upd("teams",id,data);else await put("teams",uid(),{...data,order:teamsArr().length+1});closeModal();toast("Squadra salvata")},
+  delTeam:el=>{const id=el.dataset.id;if(matchesArr().some(m=>m.home===id||m.away===id))return toast("Prima elimina o modifica le partite di questa squadra");
+    confirmBox("Elimina squadra","I giocatori torneranno nella lista dei liberi.","Elimina",async()=>{await batch([{op:"delete",col:"teams",id},...playersArr().filter(p=>p.team===id).map(p=>({op:"update",col:"players",id:p.id,data:{team:""}}))]);toast("Squadra eliminata")})},
+  unassign:async el=>{await upd("players",el.dataset.id,{team:""})},
+  bulkAdd:async()=>{
+    const ta=$("#bulk"),tm=$("#bulkTeam").value,have=new Set(playersArr().map(p=>p.name.toLowerCase()));
+    const names=[...new Set(ta.value.split(/\n|;/).map(s=>s.trim()).filter(Boolean))].filter(n=>!have.has(n.toLowerCase()));
+    if(!names.length)return toast("Nessun nome nuovo da aggiungere");
+    await batch(names.map(n=>({op:"set",col:"players",id:uid()+Math.random().toString(36).slice(2,5),data:{name:n.slice(0,60),team:tm}})));ta.value="";toast(`Aggiunti ${names.length} giocatori`)},
+  shuffle:()=>{const ts=teamsArr();const free=playersArr().filter(p=>!p.team||!S.teams[p.team]);if(!free.length||!ts.length)return toast("Nessun giocatore libero da distribuire");
+    confirmBox("Distribuisci a caso",`Assegno a caso i <b>${free.length}</b> giocatori senza squadra, riempiendo prima le squadre con meno giocatori.`,"Distribuisci",async()=>{
+      const cnt={};ts.forEach(t=>cnt[t.id]=playersArr().filter(p=>p.team===t.id).length);
+      const sh=free.map(p=>[Math.random(),p]).sort((a,b)=>a[0]-b[0]).map(x=>x[1]);
+      const ops=sh.map(p=>{const t=Object.entries(cnt).sort((a,b)=>a[1]-b[1]||Math.random()-.5)[0][0];cnt[t]++;return{op:"update",col:"players",id:p.id,data:{team:t}}});
+      await batch(ops);toast("Fatto! Buona fortuna 🎲")},false)},
+  renamePlayer:el=>openModal("rename",el.dataset.id),
+  saveRename:async el=>{const n=$("#rN").value.trim();if(!n)return;await upd("players",el.dataset.id,{name:n.slice(0,60)});closeModal()},
+  delPlayer:el=>{const id=el.dataset.id,p=S.players[id];const g=Object.values(S.goals).filter(x=>x.player===id).length;
+    confirmBox("Elimina giocatore",`Elimino <b>${esc(p&&p.name)}</b>?${g?` Ha segnato ${g} gol: resteranno nel punteggio ma senza nome.`:""}`,"Elimina",async()=>{await del("players",id)})},
+  saveMeta:async()=>{await put("meta","torneo",{...meta(),nome:$("#mNome").value.trim()||"AGUASGHIRBA",data:$("#mData").value,luogo:$("#mLuogo").value.trim(),formula:$("#mFormula").value.trim(),ptsV:Math.max(0,+$("#mV").value||0),ptsN:Math.max(0,+$("#mN").value||0),inizio:$("#mIn").value||"15:00",durata:Math.max(1,+$("#mDur").value||20)});toast("Impostazioni salvate")},
+  wipe:el=>{
+    const w=el.dataset.what,L={goals:"tutti i gol",matches:"tutto il calendario (e i gol)",demo:"i giocatori di esempio",players:"tutti i giocatori"};
+    confirmBox("Sei sicuro?",`Stai per eliminare <b>${L[w]}</b>. Non si può annullare.`,"Elimina",async()=>{
+      let ops=[];const D=(col,ids)=>ids.forEach(id=>ops.push({op:"delete",col,id}));
+      if(w==="goals")D("goals",Object.keys(S.goals));
+      if(w==="matches"){D("matches",Object.keys(S.matches));D("goals",Object.keys(S.goals))}
+      if(w==="demo")D("players",Object.entries(S.players).filter(([,p])=>p.demo).map(([id])=>id));
+      if(w==="players")D("players",Object.keys(S.players));
+      await batch(ops);toast("Fatto")});
+  },
+};
+const CH={
+  assignTo:async el=>{if(!el.value)return;const v=el.value;el.value="";await upd("players",v,{team:el.dataset.team})},
+  setTeam:async el=>{await upd("players",el.dataset.id,{team:el.value})},
+};
+document.addEventListener("click",ev=>{const el=ev.target.closest("[data-act]");if(!el)return;const f=A[el.dataset.act];if(!f)return;if(el.tagName==="SELECT")return;
+  if(el.dataset.act!=="ovClose")ev.preventDefault();safe(f)(el,ev)});
+document.addEventListener("change",ev=>{const el=ev.target;
+  if(el.id==="teamImg")return safe(pickTeamImg)(el);
+  const f=el.dataset&&CH[el.dataset.act];if(f)safe(f)(el)});
+document.addEventListener("keydown",ev=>{if(ev.key==="Escape"&&modalState)closeModal()});
+
+/* ================= TEAM IMAGE ================= */
+function loadImg(file){return new Promise((res,rej)=>{const u=URL.createObjectURL(file),i=new Image();i.onload=()=>res(i);i.onerror=()=>rej(new Error("immagine non leggibile"));i.src=u})}
+async function pickTeamImg(input){
+  const f=input.files&&input.files[0];input.value="";if(!f||!modalState||modalState.kind!=="team")return;
+  const img=await loadImg(f),w=img.naturalWidth,h=img.naturalHeight;
+  // ritaglio quadrato centrale, 320x320
+  const side=Math.min(w,h),c=document.createElement("canvas");c.width=c.height=320;
+  const x=c.getContext("2d");x.imageSmoothingQuality="high";
+  x.drawImage(img,(w-side)/2,(h-side)/2,side,side,0,0,320,320);
+  let d=c.toDataURL("image/png");
+  if(d.length>180000){x.globalCompositeOperation="destination-over";x.fillStyle="#fff";x.fillRect(0,0,320,320);d=c.toDataURL("image/jpeg",.85)}
+  modalState.img=d;renderModal();
+}
+
+/* ================= DECOR + ROUTING ================= */
+(function decor(){
+  const s=$("#snow");for(let i=0;i<26;i++){const e=document.createElement("i");e.textContent=Math.random()<.5?"❄":"•";e.style.left=Math.random()*100+"%";e.style.fontSize=(6+Math.random()*10)+"px";e.style.animationDuration=(6+Math.random()*8)+"s";e.style.animationDelay=(-Math.random()*10)+"s";s.appendChild(e)}
+  const b=$("#bubbles");for(let i=0;i<10;i++){const e=document.createElement("i");const z=4+Math.random()*9;e.style.width=e.style.height=z+"px";e.style.left=Math.random()*100+"%";e.style.animationDuration=(4+Math.random()*5)+"s";e.style.animationDelay=(-Math.random()*6)+"s";b.appendChild(e)}
+  $("#lights").innerHTML="<b></b>".repeat(28);
+})();
+function route(){const h=location.hash.slice(1);view=VIEWS.some(v=>v[0]===h)?h:"partite";render();window.scrollTo({top:0})}
+window.addEventListener("hashchange",route);
+route();
+storeInit();
+</script>
+</body>
+</html>
